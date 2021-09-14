@@ -83,6 +83,7 @@ public class MainActivityWithLogin extends BaseActivity implements HideShowIconI
 
     private static final String TAG = MainActivityWithLogin.class.getSimpleName();
 //timepass sdasd ada kbkhj
+    //delete
     private NavigationView navigationView;
 
     private DrawerLayout drawer;
