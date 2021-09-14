@@ -19,19 +19,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatImageView;
-import androidx.appcompat.widget.AppCompatTextView;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.play.core.appupdate.AppUpdateManager;
@@ -71,6 +58,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -82,8 +81,6 @@ public class MainActivityWithLogin extends BaseActivity implements HideShowIconI
         WSCallerVersionListener, UpdateDialogClickListener {
 
     private static final String TAG = MainActivityWithLogin.class.getSimpleName();
-//timepass sdasd ada kbkhj
-    //delete
     private NavigationView navigationView;
 
     private DrawerLayout drawer;
@@ -115,14 +112,14 @@ public class MainActivityWithLogin extends BaseActivity implements HideShowIconI
     public static final String TAG_CIRCULAR = "circular";
     public static String CURRENT_TAG = TAG_HOME;
 
-    private static String POPUP_CONSTANT = "mPopup";
-    private static String POPUP_FORCE_SHOW_ICON = "setForceShowIcon";
+    private static final String POPUP_CONSTANT = "mPopup";
+    private static final String POPUP_FORCE_SHOW_ICON = "setForceShowIcon";
 
     // toolbar titles respected to selected nav menu item
     private String[] activityTitles;
 
     // flag to load home fragment when user presses back key
-    private boolean shouldLoadHomeFragOnBackPress = true;
+    private final boolean shouldLoadHomeFragOnBackPress = true;
     private Handler mHandler;
 
     private CategoriesAdapter categoriesAdapter;
@@ -641,11 +638,7 @@ public class MainActivityWithLogin extends BaseActivity implements HideShowIconI
                 }
 
                 //Checking if the item is in checked state or not, if not make it in checked state
-                if (menuItem.isChecked()) {
-                    menuItem.setChecked(false);
-                } else {
-                    menuItem.setChecked(true);
-                }
+                menuItem.setChecked(!menuItem.isChecked());
                 menuItem.setChecked(true);
 
                 loadHomeFragment();
