@@ -82,7 +82,7 @@ public class MainActivityWithLogin extends BaseActivity implements HideShowIconI
         WSCallerVersionListener, UpdateDialogClickListener {
 
     private static final String TAG = MainActivityWithLogin.class.getSimpleName();
-//timepass sdasd 
+//timepass sdasd ada
     private NavigationView navigationView;
 
     private DrawerLayout drawer;
