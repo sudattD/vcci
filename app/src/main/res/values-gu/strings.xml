@@ -1,0 +1,187 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">VCCI Information</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+
+    <string name="nav_home">હોમ</string>
+    <string name="nav_about_us">અમારા વિશે</string>
+    <string name="nav_commitee">સમિતિઓ</string>
+    <string name="nav_cm_message">મહાનુભાવોના સંદેશ</string>મહાનુભાવોના સંદેશ
+    <string name="nav_event">કાર્યક્રમો</string>
+    <string name="nav_membership">સભ્યપદ</string>
+    <string name="nav_circular">પરિપત્રો</string>
+    <string name="nav_gallery">ગેલેરી</string>
+    <string name="nav_vcci_member">વીસીસી મેમ્બરલિસ્ટ</string>
+    <!-- <string name="nav_library">Library</string>-->
+    <string name="nav_contact">સંપર્ક કરો</string>
+    <string name="nav_login">સભ્યનું લૉગ ઇન</string>
+    <string name="nav_logout">લૉગ આઉટ</string>
+    <string name="nav_language">સેટિંગ</string>
+
+    <string name="txt_event_detail">પ્રસંગની વિગત</string>
+    <string name="txt_circular_detail">પરિપત્ર વિગત</string>
+    <string name="txt_photo_detail">ફોટો વિગતવાર</string>
+    <string name="txt_news_detail">સમાચાર વિગતવાર</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles" tools:ignore="InconsistentArrays">
+        <item> </item>
+        <item>અમારા વિશે</item>
+        <item>સમિતિઓ</item>
+        <item>મહાન સંદેશ</item>
+        <item>કાર્યક્રમો</item>
+        <item>સભ્યપદ</item>
+        <item>ગેલેરી</item>
+        <item> </item>
+        <!--<item>Library</item>-->
+        <item>સંપર્ક કરો</item>
+        <item></item>
+        <item>સેટિંગ</item>
+       <!-- <item></item>
+        <item></item>
+        <item></item>
+        <item></item>-->
+
+    </string-array>
+
+    <string-array name="nav_item_activity_titles_for_logged_in" tools:ignore="InconsistentArrays">
+        <item> </item>
+        <item>અમારા વિશે</item>
+        <item>સમિતિઓ</item>
+        <item>મહાન સંદેશ</item>
+        <item>કાર્યક્રમો</item>
+        <item>સભ્યપદ</item>
+        <item>પરિપત્રો</item>
+        <item>ગેલેરી</item>
+        <item> </item>
+        <item>સંપર્ક કરો</item>
+        <item> </item>
+        <item>સેટિંગ</item>
+        <!--<item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>-->
+    </string-array>
+
+
+    <string name="activity_title_about_us">અમારા વિશે</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="txt_advertisements">જાહેરાત</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="msg_token_fmt">FB token</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="gcci">VCCI</string>
+    <string name="txt_english">English</string>
+    <string name="txt_hindi">हिन्दी</string>
+    <string name="gujarati">ગુજરાતી</string>
+    <string name="cancel">રદ કરો</string>
+    <string name="choose_your_preferred_language">તમારી પસંદીદા ભાષા પસંદ કરો</string>
+    <string name="chooser_title">સાથે ખોલો</string>
+    <string name="change_language">ભાષા બદલો :</string>
+    <string name="apply_settings">સેટિંગ્સ લાગુ કરો</string>
+    <string name="version">સંસ્કરણ</string>
+    <string name="txt_news">સમાચાર</string>
+    <string name="txt_more_news">વધુ સમાચાર</string>
+    <string name="txt_bulletins">બુલેટિન્સ</string>
+    <string name="txt_more_bulletins">વધુ બુલેટિન્સ</string>
+    <string name="txt_gcci_trending">VCCI  ટ્રેન્ડિંગ</string>
+
+    <string name="profile">પ્રોફાઇલ</string>
+    <string name="events_and_activities">કાર્યક્રમો અને પ્રવૃત્તિઓ</string>
+    <string name="future_plan">ભાવિ યોજના</string>
+    <string name="office_bearers">પદાધિકારીઓ</string>
+    <string name="executive_committee">કારોબારી સમિતિ</string>
+    <string name="past_president">ભૂતકાળના પ્રમુખો</string>
+    <string name="secretariat">સચિવાલય</string>
+
+    <string name="txt_name">નામ</string>
+    <string name="txt_year">વર્ષ</string>
+
+    <string name="working_committee_2">મેનેજિંગ કમિટીન 2020-22</string>
+    <string name="working_committee">મેનેજિંગ કમિટીન 2018-20</string>
+    <string name="managing_committee_member">મેનેજિંગ કમિટીના સભ્ય</string>
+    <string name="co_opted_members">સહકારી સભ્યો</string>
+    <string name="invitee_members">આમંત્રિત સભ્યો</string>
+    <string name="special_invitee_members">ખાસ આમંત્રિત સભ્યો</string>
+    <string name="advisory_board">સલાહકાર મંડળ</string>
+    <!--<string name="task_force">કાર્ય બળ</string>-->
+
+    <string name="sr_no">ક્રમ નં</string>
+    <!--<string name="company_name">કંપની નું નામ</string>-->
+    <string name="company_name">સરનામું</string>
+    <string name="mobile">મોબાઇલ</string>
+    <string name="phone">ફોન</string>
+    <string name="phone_r">ફોન (રહેવાસી)</string>
+    <string name="txt_email">ઇમેઇલ</string>
+
+
+    <!--<string name="committee_name">સમિતિ નામ</string>
+    <string name="chairman_name">અધ્યક્ષનું નામ</string>
+    <string name="mobile">મોબાઇલ</string>
+    <string name="ob_ec_memeber">ઓબી / ઇસી સભ્ય</string>
+    <string name="co_chairman_name">સહ અધ્યક્ષનું નામ</string>
+    <string name="office_incharge">ઓફિસ ઇન્ચાર્જ</string>-->
+
+    <string name="upcoming_events">આગામી કાર્યક્રમો</string>
+    <string name="past_events">અગાઉના કાર્યક્રમો</string>
+    <string name="upcoming_circulars">નવીનતમ પરિપત્ર</string>
+    <string name="past_circulars">પૂર્વ પરિપત્ર</string>
+
+    <string name="photo_gallery">ફોટો ગેલેરી</string>
+    <string name="video_gallery">વિડિઓ ગેલેરી</string>
+    <string name="video_clip">વિડિઓ ક્લિપ</string>
+
+    <string name="photo_msg">ફોટો સંદેશ</string>
+    <string name="video_msg">વિડિઓ સંદેશ</string>
+
+    <string name="dignitary_video_msg">મહાનુભાવોના સંદેશ</string>     
+    <string name="dignitary_photo_msg">મહાનુભાવોના પત્ર</string>
+
+    <string name="membership_form">સભ્યપદ ફોર્મ</string>
+    <string name="txt_event_date">ઇવેન્ટની તારીખ :</string>
+    <string name="start_date">પ્રારંભ તારીખ :</string>
+    <string name="end_date">અંતિમ તારીખ :</string>
+    <string name="time">સમય :</string>
+    <string name="venue">સ્થળ :</string>
+    <string name="in_association_with">સંગઠન સાથે :</string>
+    <string name="description">વર્ણન :</string>
+    <string name="related_news">સંબંધિત સમાચાર</string>
+    <string name="previous">પહેલાનું</string>
+    <string name="next">આગામી</string>
+    <string name="membership_forms">સભ્યપદના ફોર્મ્સ ડાઉનલોડ કરો :</string>
+    <string name="other_documents">અન્ય દસ્તાવેજો</string>
+    <string name="select_category">કેટેગરી પસંદ કરો</string>
+    <string name="new_version_available">નવું સંસ્કરણ ઉપલબ્ધ છે</string>
+    <string name="update_now">હવે અપડેટ કરો</string>
+    <string name="gcci_app_have_new_updates_please_update_now">VCCI એપમાં નવા અપડેટ્સ છે. કૃપા કરી હવે અપડેટ કરો</string>
+    <string name="txt_membership">સભ્યપદ :</string>
+    <string name="entrepreneurs_may_opt_for_either_annual_or_life_membership">ઉદ્યમીઓ વાર્ષિક અથવા લાઇફ સભ્યપદની પસંદગી કરી શકે છે.</string>
+    <string name="gst_as_applicable">લાગુ પડે તેમ GST.</string>
+    <string name="vcci_currently_has_a_membership_base_of_over_1900_members">VCCI પાસે હાલમાં 1900 થી વધુ સભ્યોનો સભ્યપદ છે.</string>
+    <string name="txt_description">વર્ણન</string>
+    <string name="annual_membership">વાર્ષિક સભ્યપદ</string>
+    <string name="life_membership">આજીવન સભ્યપદ</string>
+    <string name="entrance_fee">પ્રવેશ ફી</string>
+    <string name="membership_fees">સભ્યપદ ફી</string>
+    <string name="annual_administrative_charges">વાર્ષિક વહીવટી ખર્ચ</string>
+    <string name="are_you_sure_you_want_to_logout">શું તમે ખરેખર લૉગ આઉટ કરવા માંગો છો?</string>
+    <string name="email_id">ઇમેઇલ આઈડી :</string>
+    <string name="president_name">પ્રમુખ નામ</string>
+    <string name="organisation_name">સંસ્થા નામ</string>
+    <string name="please_enter_your_registered_email_address">કૃપા કરીને તમારું નોંધાયેલ ઇમેઇલ સરનામું દાખલ કરો</string>
+    <string name="password">પાસવર્ડ :</string>
+    <string name="please_enter_your_password">મહેરબાની કરીને તમારો પાસવર્ડ નાખો</string>
+    <string name="txt_login">લૉગ ઇન</string>
+    <string name="no_record_found">કોઈ રેકોર્ડ મળ્યો નથી !!!</string>
+
+</resources>

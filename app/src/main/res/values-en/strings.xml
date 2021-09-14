@@ -1,0 +1,197 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">VCCI Information</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="text_gujarati" translatable="false">ગુજરાતી</string>
+    <string name="text_english" translatable="false">English</string>
+    <string name="txt_hindi" tools:ignore="ExtraTranslation">हिन्दी</string>
+
+    <!-- Navigation Drawer menu labels -->
+
+    <string name="nav_home">Home</string>
+    <string name="nav_about_us">About US</string>
+    <string name="nav_commitee">Committees</string>
+    <string name="nav_cm_message">Dignitaries Message</string>
+    <string name="nav_event">Events</string>
+    <string name="nav_membership">Memberships</string>
+    <string name="nav_circular">Circular</string>
+    <string name="nav_gallery">Gallery</string>
+    <string name="nav_vcci_member">Vcci MemberList</string>
+    <string name="nav_library" tools:ignore="MissingTranslation">Library</string>
+    <string name="nav_contact">Contact</string>
+    <string name="nav_login">Member\'s Login</string>
+    <string name="nav_logout">Logout</string>
+    <string name="nav_language">Settings</string>
+    <string name="nav_facebook">Facebook</string>
+    <string name="nav_twitter">Twitter</string>
+    <string name="nav_linkedin">LinkedIn</string>
+    <string name="nav_youtube">Youtube</string>
+
+    <string name="txt_event_detail">Event Detail</string>
+    <string name="txt_circular_detail">Circular Detail</string>
+    <string name="txt_photo_detail">Photo Detail</string>
+
+    <string name="txt_news_detail">News Detail</string>
+
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles" tools:ignore="InconsistentArrays">
+        <item> </item>
+        <item>About Us</item>
+        <item>Committees</item>
+        <item>Dignitaries Message</item>
+        <item>Events</item>
+        <item>Memberships</item>
+        <item>Gallery</item>
+        <item> </item>
+        <item>Contact</item>
+        <item> </item>
+        <item>Settings</item>
+       <!-- <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>-->
+    </string-array>
+
+    <string-array name="nav_item_activity_titles_for_logged_in" tools:ignore="InconsistentArrays">
+        <item> </item>
+        <item>About Us</item>
+        <item>Committees</item>
+        <item>Dignitary Message</item>
+        <item>Events</item>
+        <item>Memberships</item>
+        <item>Circulars</item>
+        <item>Gallery</item>
+        <item> </item>
+        <item>Contact</item>
+        <item> </item>
+        <item>Settings</item>
+        <!--<item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>-->
+    </string-array>
+
+
+    <string name="activity_title_about_us">About US</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="txt_advertisements">Advertisement</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="msg_token_fmt">FB token</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="gcci">VCCI</string>
+    <string name="txt_english">English</string>
+    <string name="gujarati">ગુજરાતી</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose_your_preferred_language">Choose your preferred language</string>
+    <string name="chooser_title">Open with</string>
+    <string name="change_language">Change Language :</string>
+    <string name="apply_settings">Apply Settings</string>
+    <string name="version">Version</string>
+    <string name="txt_news">News</string>
+    <string name="txt_more_news">More News</string>
+    <string name="txt_bulletins">Bulletins</string>
+    <string name="txt_more_bulletins">More Bulletins</string>
+    <string name="txt_gcci_trending">VCCI Trending</string>
+
+    <string name="profile">Profile</string>
+    <string name="events_and_activities">Events &amp; Activities</string>
+    <string name="future_plan">Future Plan</string>
+    <string name="office_bearers">Office Bearers</string>
+    <string name="executive_committee">Executive Committee</string>
+    <string name="past_president">Past Presidents</string>
+    <string name="secretariat">Secretariat</string>
+
+    <string name="txt_name">Name</string>
+    <string name="txt_year">Year</string>
+
+    <string name="working_committee_2">Managing Committee 2020-22</string>
+    <string name="working_committee">Managing Committee 2018-20</string>
+    <string name="managing_committee_member">Managing Committee Member</string>
+    <string name="co_opted_members">Co-Opted Members</string>
+    <string name="invitee_members">Invitee Members</string>
+    <string name="special_invitee_members">Special Invitee Members</string>
+    <string name="advisory_board">Advisory Board</string>
+    <!--<string name="task_force">Task Force</string>-->
+
+    <string name="sr_no">Sr. No</string>
+    <!--<string name="company_name">Company Name</string>-->
+    <string name="company_name">Address</string>
+    <string name="mobile">Mobile</string>
+    <string name="phone">Phone</string>
+    <string name="phone_r">Phone (R)</string>
+    <string name="txt_email">Email</string>
+
+
+
+
+   <!-- <string name="committee_name">Committee Name</string>
+    <string name="chairman_name">Chairman Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="ob_ec_memeber">OB/EC Memeber</string>
+    <string name="co_chairman_name">Co-Chairman Name</string>
+    <string name="office_incharge">Office Incharge</string>-->
+
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="past_events">Past Events</string>
+
+    <string name="upcoming_circulars">Latest Circulars</string>
+    <string name="past_circulars">Past Circulars</string>
+
+    <string name="photo_gallery">Photo Gallery</string>
+    <string name="video_gallery">Video Gallery</string>
+    <string name="video_clip">Video Clip</string>
+
+    <string name="photo_msg">Photo Message</string>
+    <string name="video_msg">Video Message</string>
+
+    <string name="dignitary_video_msg">Dignitaries Message</string>
+    <string name="dignitary_photo_msg">Dignitaries Letter</string>
+
+    <string name="membership_form">Membership Forms</string>
+    <string name="txt_event_date">Event Date :</string>
+    <string name="start_date">Start Date :</string>
+    <string name="end_date">End Date :</string>
+    <string name="time">Time :</string>
+    <string name="venue">Venue :</string>
+    <string name="in_association_with">In Association with :</string>
+    <string name="description">Description :</string>
+    <string name="related_news">Related News</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="membership_forms">Download Membership Forms :</string>
+    <string name="other_documents">Other Documents</string>
+    <string name="select_category">Select Category</string>
+    <string name="new_version_available">New version available</string>
+    <string name="update_now">Update Now</string>
+    <string name="gcci_app_have_new_updates_please_update_now">VCCI App have new updates. Please update now</string>
+    <string name="txt_membership">Membership :</string>
+    <string name="entrepreneurs_may_opt_for_either_annual_or_life_membership">Entrepreneurs may opt for either Annual or Life Membership.</string>
+    <string name="gst_as_applicable">GST as applicable.</string>
+    <string name="vcci_currently_has_a_membership_base_of_over_1900_members">VCCI currently has a membership base of over 1900 members.</string>
+    <string name="txt_description">Description</string>
+    <string name="annual_membership">Annual Membership</string>
+    <string name="life_membership">Life Membership</string>
+    <string name="entrance_fee">Entrance Fee</string>
+    <string name="membership_fees">Membership Fees</string>
+    <string name="annual_administrative_charges">Annual Administrative Charges</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="email_id">Email ID :</string>
+    <string name="president_name">President Name</string>
+    <string name="organisation_name">Organisation Name</string>
+    <string name="please_enter_your_registered_email_address">Please enter your registered email address</string>
+    <string name="password">Password :</string>
+    <string name="please_enter_your_password">Please enter your password</string>
+    <string name="txt_login">Login</string>
+    <string name="no_record_found">No record found !!!</string>
+
+</resources>

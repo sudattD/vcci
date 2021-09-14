@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/nav_home" />
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_about_us"
+            android:title="@string/nav_about_us" />
+
+        <item
+            android:id="@+id/nav_commitee"
+            android:icon="@drawable/ic_committee"
+            android:title="@string/nav_commitee" />
+
+        <item
+            android:id="@+id/nav_cm_message"
+            android:icon="@drawable/ic_cm_message"
+            android:title="@string/nav_cm_message" />
+
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_events"
+            android:title="@string/nav_event" />
+
+        <item
+            android:id="@+id/nav_membership"
+            android:icon="@drawable/ic_membership"
+            android:title="@string/nav_membership" />
+
+        <item
+            android:id="@+id/nav_circular"
+            android:icon="@drawable/ic_circular"
+            android:title="@string/nav_circular" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_gallery"
+            android:title="@string/nav_gallery" />
+
+        <item
+            android:id="@+id/nav_vcci_memberlist"
+            android:icon="@drawable/ic_vcciuser"
+            android:title="@string/nav_vcci_member" />
+
+        <!--<item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/ic_library"
+            android:title="@string/nav_library" />-->
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_contact"
+            android:title="@string/nav_contact" />
+
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_login_logout"
+            android:title="@string/nav_login" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_login_logout"
+            android:title="@string/nav_logout" />
+
+        <item
+            android:id="@+id/nav_language"
+            android:icon="@drawable/ic_setting"
+            android:title="@string/nav_language" />
+
+    </group>
+
+    <item android:title="Social Links">
+        <menu>
+
+          <!--  <item
+                android:id="@+id/nav_manage"
+                android:title="layout"
+                app:actionLayout="@layout/action_layout" />-->
+
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/ic_vcci_facebook"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/nav_twitter"
+                android:icon="@drawable/ic_vcci_twitter"
+                android:title="Twitter" />
+            <item
+                android:id="@+id/nav_linkedin"
+                android:icon="@drawable/ic_vcci_linkedin"
+                android:title="LinkedIn" />
+            <item
+                android:id="@+id/nav_youtube"
+                android:icon="@drawable/ic_vcci_youtube"
+                android:title="YouTube" />
+
+        </menu>
+    </item>
+
+    <!--<item
+        android:iconTint="@color/colorPrimary"
+        android:title="Social Media Links">
+        <menu>
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/ic_vcci_facebook"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/nav_twitter"
+                android:icon="@drawable/ic_vcci_twitter"
+                android:title="Twitter" />
+            <item
+                android:id="@+id/nav_linkedin"
+                android:icon="@drawable/ic_vcci_linkedin"
+                android:title="LinkedIn" />
+            <item
+                android:id="@+id/nav_youtube"
+                android:icon="@drawable/ic_vcci_youtube"
+                android:title="YouTube" />
+        </menu>
+    </item>-->
+
+</menu>

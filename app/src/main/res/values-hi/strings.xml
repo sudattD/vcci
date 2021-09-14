@@ -1,0 +1,202 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">VCCI Information</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="text_gujarati" translatable="false">ગુજરાતી</string>
+    <string name="text_english" translatable="false">English</string>
+    <string name="txt_hindi">हिन्दी</string>
+
+    <!-- Navigation Drawer menu labels -->
+
+    <string name="nav_home">होम</string>
+    <string name="nav_about_us">हमारे बारे में</string>
+    <string name="nav_commitee">समितियां</string>
+    <string name="nav_cm_message">गणमान्य संदेश</string>
+    <string name="nav_event">कार्यक्रम</string>
+    <string name="nav_membership">सदस्यता</string>
+    <string name="nav_circular">परिपत्र</string>
+    <string name="nav_gallery">गेलरी</string>
+    <string name="nav_vcci_member">VCCI सदस्य सूची</string>
+    <string name="nav_library" tools:ignore="MissingTranslation">Library</string>
+    <string name="nav_contact">संपर्क करें</string>
+    <string name="nav_login">सदस्य लॉग इन</string>
+    <string name="nav_logout">लॉग आउट</string>
+    <string name="nav_language">सेटिंग</string>
+    <string name="nav_facebook">Facebook</string>
+    <string name="nav_twitter">Twitter</string>
+    <string name="nav_linkedin">LinkedIn</string>
+    <string name="nav_youtube">Youtube</string>
+
+    <string name="txt_confirm_logout">लॉगआउट की पुष्टि करें</string>
+    <string name="txt_logout_msg">क्या आप लॉग आउट करना चाहते हैं?</string>
+    <string name="txt_category">श्रेणी</string>
+    <string name="txt_details">विवरण</string>
+
+
+    <string name="txt_event_detail">Event Detail</string>
+    <string name="txt_circular_detail">Circular Detail</string>
+    <string name="txt_photo_detail">Photo Detail</string>
+
+    <string name="txt_news_detail">समाचार विवरण</string>
+
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles" tools:ignore="InconsistentArrays">
+        <item> </item>
+        <item>हमारे बारे में</item>
+        <item>समितियां</item>
+        <item>गणमान्य संदेश</item>
+        <item>कार्यक्रम</item>
+        <item>सदस्यता</item>
+        <item>गेलरी</item>
+        <item> </item>
+        <item>संपर्क करें</item>
+        <item> </item>
+        <item>सेटिंग</item>
+       <!-- <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>-->
+    </string-array>
+
+    <string-array name="nav_item_activity_titles_for_logged_in" tools:ignore="InconsistentArrays">
+        <item> </item>
+        <item>हमारे बारे में</item>
+        <item>समितियां</item>
+        <item>गणमान्य संदेश</item>
+        <item>कार्यक्रम</item>
+        <item>सदस्यता</item>
+        <item>परिपत्र</item>
+        <item>गेलरी</item>
+        <item> </item>
+        <item>संपर्क करें</item>
+        <item> </item>
+        <item>सेटिंग</item>
+        <!--<item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>-->
+    </string-array>
+
+
+    <string name="activity_title_about_us">हमारे बारे में</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">लॉग आउट</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="txt_advertisements">विज्ञापन</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="msg_token_fmt">FB token</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="gcci">VCCI</string>
+    <string name="txt_english">English</string>
+    <string name="gujarati">ગુજરાતી</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="choose_your_preferred_language">अपनी पसंदीदा भाषा चुनें</string>
+    <string name="chooser_title">Open with</string>
+    <string name="change_language">भाषा बदलें :</string>
+    <string name="apply_settings">सेटिंग लागू करें</string>
+    <string name="version">Version</string>
+    <string name="txt_news">समाचार</string>
+    <string name="txt_more_news">अधिक समाचार</string>
+    <string name="txt_bulletins">बुलेटिन</string>
+    <string name="txt_more_bulletins">अधिक जानकारी</string>
+    <string name="txt_gcci_trending">VCCI ट्रेंडिंग</string>
+
+    <string name="profile">प्रोफ़ाइल</string> 
+    <string name="events_and_activities">कार्यक्रम और गतिविधियाँ</string>
+    <string name="future_plan">भविष्य की योजनाएं</string>
+    <string name="office_bearers">पदाधिकारी</string>
+    <string name="executive_committee">कार्यकारी समिति</string>
+    <string name="past_president">विगत अध्यक्ष</string>
+    <string name="secretariat">सचिवालय</string>
+
+    <string name="txt_name">नाम</string>
+    <string name="txt_year">Year</string>
+
+    <string name="working_committee_2">प्रबंध समिति 2020-22</string>
+    <string name="working_committee">प्रबंध समिति 2018-20</string>
+    <string name="managing_committee_member">प्रबंध समिति सदस्य</string>
+    <string name="co_opted_members">सह-चयनित सदस्य</string>
+    <string name="invitee_members">आमंत्रित सदस्य</string>
+    <string name="special_invitee_members">विशेष आमंत्रित सदस्य</string>
+    <string name="advisory_board">सलाहकार बोर्ड</string>
+    <!--<string name="task_force">Task Force</string>-->
+
+    <string name="sr_no">Sr. No</string>
+    <!--<string name="company_name">Company Name</string>-->
+    <string name="company_name">पता</string>
+    <string name="mobile">मोबाइल</string>
+    <string name="phone">फ़ोन</string>
+    <string name="phone_r">फ़ोन (R)</string>
+    <string name="txt_email">ईमेल</string>
+
+
+
+
+   <!-- <string name="committee_name">Committee Name</string>
+    <string name="chairman_name">Chairman Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="ob_ec_memeber">OB/EC Memeber</string>
+    <string name="co_chairman_name">Co-Chairman Name</string>
+    <string name="office_incharge">Office Incharge</string>-->
+
+    <string name="upcoming_events">भविष्य की योजनाएं</string>
+    <string name="past_events">पिछले कार्यक्रम</string>
+    <string name="upcoming_circulars">नवीनतम परिपत्र</string>
+    <string name="past_circulars">पिछले परिपत्र</string>
+
+    <string name="photo_gallery">चित्र गैलरी</string>
+    <string name="video_gallery">वीडियो गैलरी</string>
+    <string name="video_clip">वीडियो क्लिप</string>
+
+    <string name="photo_msg">चित्र संदेश</string>
+    <string name="video_msg">वीडियो संदेश</string>
+
+    <string name="dignitary_video_msg">उच्चपदधारी के संदेश</string>
+    <string name="dignitary_photo_msg">उच्चपदधारी के पत्र</string>
+
+    <string name="membership_form">Membership Forms</string>
+    <string name="txt_event_date">Event Date :</string>
+    <string name="start_date">आरंभ तारीख :</string>
+    <string name="end_date">अंतिम तारीख :</string>
+    <string name="time">समय :</string>
+    <string name="venue">स्थल :</string>
+    <string name="in_association_with">के सहयोग से :</string>
+    <string name="description">विवरण :</string>
+    <string name="related_news">सम्बंधित खबर</string>
+    <string name="previous">पिछला</string>
+    <string name="next">अगला</string>
+    <string name="membership_forms">सदस्यता फार्म डाउनलोड करें :</string>
+    <string name="other_documents">अन्य दस्तावेज</string>
+    <string name="select_category">श्रेणी चुनना</string>
+    <string name="new_version_available">नया संस्करण उपलब्ध है</string>
+    <string name="update_now">अभी अद्यतन करें</string>
+    <string name="gcci_app_have_new_updates_please_update_now">VCCI ऐप में नए अपडेट हैं। कृपया अब अपडेट करें</string>
+    <string name="txt_membership">Membership :</string>
+    <string name="entrepreneurs_may_opt_for_either_annual_or_life_membership">उद्यमी वार्षिक या जीवन सदस्यता के लिए विकल्प चुन सकते हैं.</string>
+    <string name="gst_as_applicable">GST as applicable.</string>
+    <string name="vcci_currently_has_a_membership_base_of_over_1900_members">VCCI के पास वर्तमान में 1900 से अधिक सदस्यों का सदस्यता आधार है।</string>
+    <string name="txt_description">विवरण</string>
+    <string name="annual_membership">वार्षिक सदस्यता</string>
+    <string name="life_membership">जीवन की सदस्यता</string>
+    <string name="entrance_fee">प्रवेश शुल्क</string>
+    <string name="membership_fees">सदस्यता शुल्क</string>
+    <string name="annual_administrative_charges">वार्षिक प्रशासनिक शुल्क</string>
+    <string name="are_you_sure_you_want_to_logout">क्या आप लॉग आउट करना चाहते हैं?</string>
+    <string name="email_id">ईमेल आईडी :</string>
+    <string name="president_name">राष्ट्रपति का नाम</string>
+    <string name="organisation_name">संगठन का नाम</string>
+    <string name="please_enter_your_registered_email_address">कृपया अपना पंजीकृत ईमेल पता दर्ज करें</string>
+    <string name="password">पास वर्ड :</string>
+    <string name="please_enter_your_password">अपना पासवर्ड दर्ज करें</string>
+    <string name="txt_login">लॉग इन</string>
+    <string name="no_record_found">कोई रिकॉर्ड नहीं मिला !!!</string>
+
+</resources>

@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_language"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16ssp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="true"
+                    android:text="@string/txt_english"
+                    android:textColor="@drawable/buy_sell_radio_selector_text"
+                    android:textSize="@dimen/_16ssp"
+                    app:buttonTint="@color/colorPrimary" />
+
+                <RadioButton
+                    android:id="@+id/radio_gujarati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:enabled="true"
+                    android:text="@string/gujarati"
+                    android:textColor="@drawable/buy_sell_radio_selector_text"
+                    android:textSize="@dimen/_16ssp"
+                    app:buttonTint="@color/colorPrimary" />
+
+                <RadioButton
+                    android:id="@+id/radio_hindi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:enabled="true"
+                    android:text="@string/hindi"
+                    android:textColor="@drawable/buy_sell_radio_selector_text"
+                    android:textSize="@dimen/_16ssp"
+                    app:buttonTint="@color/colorPrimary" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_apply_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_96sdp"
+                android:background="@color/colorPrimary"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="@string/apply_settings"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

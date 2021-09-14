@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    android:paddingBottom="@dimen/_16sdp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="@dimen/_8sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_148sdp"
+        tools:ignore="RedundantNamespace">
+
+        <com.ibphub.vcci_new.util.RoundRectCornerImageView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ibp_logo_splash"
+            android:scaleType="centerCrop"
+            card_view:civ_border_color="#FF000000"
+            card_view:civ_border_width="2dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_video_title"
+            />
+
+        <TextView
+            android:id="@+id/tv_video_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent_black"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="Lorem epsum I am a very good boy. I am here working as andorid"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

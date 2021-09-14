@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_gcci_trending"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_bulletin_thumb"
+        android:layout_width="@dimen/_96sdp"
+        android:layout_height="@dimen/_72sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_placeholder" />
+
+    <TextView
+        android:id="@+id/tv_bulletins_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_toRightOf="@+id/iv_bulletin_thumb"
+        android:paddingEnd="@dimen/_16sdp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="Lorem Epsum sdfhjsd fhjdsh fjds hfj dj hd sf jh d jfsdkjfhkjd"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12ssp"
+        android:layout_toEndOf="@+id/iv_bulletin_thumb"
+        android:paddingRight="@dimen/_16sdp" />
+
+</RelativeLayout>

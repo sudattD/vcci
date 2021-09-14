@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:elevation="@dimen/_1sdp"
+        android:padding="@dimen/_8sdp"
+        android:src="@drawable/ic_cancel" />
+
+    <com.ibphub.vcci_new.image_slider.HackyViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_title"
+        android:layout_below="@+id/iv_cancel" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_8sdp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_16ssp"
+        tools:text="Lorem Epsum is a dummy text" />
+
+</RelativeLayout>
+
+

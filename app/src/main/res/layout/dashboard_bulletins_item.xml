@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_96sdp"
+    android:layout_height="@dimen/_108sdp"
+    android:layout_margin="@dimen/_4ssp"
+    android:id="@+id/rl_bulletin">
+
+    <com.ibphub.vcci_new.util.RoundRectCornerImageView
+        android:id="@+id/iv_bulletin_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ibp_logo_splash"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_bulletins_title"
+        android:background="@color/transparent_black"
+        android:layout_alignParentBottom="true"
+        android:layout_width="@dimen/_96sdp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_4sdp"
+        android:textColor="@android:color/white"
+        android:text="Lorem Epsum"
+        android:textAlignment="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textSize="@dimen/_8ssp"/>
+
+</RelativeLayout>

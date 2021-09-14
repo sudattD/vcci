@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="@dimen/_196sdp"
+        android:layout_height="@dimen/_196sdp"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splash_icon" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="normal"
+        android:layout_above="@+id/ibp_logo"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:text="Powered By :" />
+
+    <ImageView
+        android:id="@+id/ibp_logo"
+        android:layout_width="@dimen/_72sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ibp_logo_splash" />
+
+
+</RelativeLayout>
