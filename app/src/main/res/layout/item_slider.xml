@@ -6,7 +6,7 @@
     android:id="@+id/linearLayout"
     android:orientation="vertical">
 
-    <com.ibphub.vcci_new.util.RoundRectCornerImageView
+    <vcci.android.consumer.util.RoundRectCornerImageView
         android:id="@+id/iv_banner_img"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

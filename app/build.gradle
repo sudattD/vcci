@@ -3,10 +3,10 @@ apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "29.0.3"
+    buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.ibphub.vcci_new"
+        applicationId 'vcci.android.consumer'
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -17,8 +17,9 @@ android {
     }
 
     buildTypes {
+
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

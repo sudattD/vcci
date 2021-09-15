@@ -14,7 +14,7 @@
         android:padding="@dimen/_8sdp"
         android:src="@drawable/ic_cancel" />
 
-    <com.ibphub.vcci_new.image_slider.HackyViewPager
+    <vcci.android.consumer.image_slider.HackyViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

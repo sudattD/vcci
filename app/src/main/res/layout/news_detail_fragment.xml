@@ -24,7 +24,7 @@
             android:gravity="center_vertical"
             android:padding="@dimen/_4sdp">
 
-            <com.ibphub.vcci_new.util.RoundRectCornerImageView
+            <vcci.android.consumer.util.RoundRectCornerImageView
                 android:id="@+id/iv_previous_news"
                 android:layout_width="@dimen/_48sdp"
                 android:layout_height="@dimen/_48sdp"
@@ -71,7 +71,7 @@
             android:gravity="center_vertical"
             android:padding="@dimen/_4sdp">
 
-            <com.ibphub.vcci_new.util.RoundRectCornerImageView
+            <vcci.android.consumer.util.RoundRectCornerImageView
                 android:id="@+id/iv_next_news"
                 android:layout_width="@dimen/_48sdp"
                 android:layout_height="@dimen/_48sdp"
@@ -172,7 +172,7 @@
 
                 </RelativeLayout>
 
-                <com.ibphub.vcci_new.util.RoundRectCornerImageView
+                <vcci.android.consumer.util.RoundRectCornerImageView
                     android:id="@+id/iv_news"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_148sdp"

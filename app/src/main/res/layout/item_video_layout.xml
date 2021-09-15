@@ -15,7 +15,7 @@
         android:layout_height="@dimen/_148sdp"
         tools:ignore="RedundantNamespace">
 
-        <com.ibphub.vcci_new.util.RoundRectCornerImageView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        <vcci.android.consumer.util.RoundRectCornerImageView xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/iv_video"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
