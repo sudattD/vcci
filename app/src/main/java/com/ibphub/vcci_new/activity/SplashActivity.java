@@ -8,16 +8,16 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.installations.FirebaseInstallations;
 import com.ibphub.vcci_new.R;
 import com.ibphub.vcci_new.util.LocaleManager;
 import com.ibphub.vcci_new.util.Stash;
 
 import java.util.Objects;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -29,7 +29,7 @@ public class SplashActivity extends BaseActivity {
     ImageView imgLogo;
 
     // Splash screen timer
-    private static int SPLASH_TIME_OUT = 3000;
+    private static final int SPLASH_TIME_OUT = 3000;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,14 +40,14 @@ public class SplashActivity extends BaseActivity {
         //setNewLocale(this, LocaleManager.ENGLISH);
         Stash.put("menu_for", "home");
 
-        FirebaseInstanceId.getInstance().getInstanceId()
+        FirebaseInstallations.getInstance().getId()
                 .addOnCompleteListener(task -> {
                     if (!task.isSuccessful()) {
                         Log.w(TAG, "getInstanceId failed", task.getException());
                         return;
                     }
                     // Get new Instance ID token
-                    String token = Objects.requireNonNull(task.getResult()).getToken();
+                    String token = Objects.requireNonNull(task.getResult());
                     Log.d(TAG, token);
                     Log.d(TAG, "onCreate: " + token);
                     Stash.put("fcm_token", token);
