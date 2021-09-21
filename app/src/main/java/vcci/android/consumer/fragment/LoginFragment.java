@@ -35,6 +35,7 @@ import vcci.android.consumer.config.Configuration;
 import vcci.android.consumer.model.login.LoginResponse;
 import vcci.android.consumer.model.login.Member;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -108,7 +109,7 @@ public class LoginFragment extends Fragment {
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<LoginResponse> call = apiService.makeLogin("1.0", Configuration.DEVICE_TYPE, "member-login",
+        Call<LoginResponse> call = apiService.makeLogin(NetworkConstants.version, Configuration.DEVICE_TYPE, "member-login",
                 token, "123456", str_email, str_password);
         call.enqueue(new Callback<LoginResponse>() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)

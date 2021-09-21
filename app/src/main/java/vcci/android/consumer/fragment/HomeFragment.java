@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -58,6 +59,7 @@ import vcci.android.consumer.model.dashboard_news.LeftAdItem;
 import vcci.android.consumer.model.dashboard_news.RightAdItem;
 import vcci.android.consumer.model.dashboard_news.TrendingNewsItem;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -193,7 +195,7 @@ public class HomeFragment extends Fragment implements NewsSelectionListener, Bul
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<DashboardResponse> call = apiService.getDashboardData("1.0", Configuration.DEVICE_TYPE, "get-home-data",
+        Call<DashboardResponse> call = apiService.getDashboardData(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-home-data",
                 token, "123456", "1", "100");
         call.enqueue(new Callback<DashboardResponse>() {
             @Override
@@ -248,6 +250,9 @@ public class HomeFragment extends Fragment implements NewsSelectionListener, Bul
             public void onFailure(Call<DashboardResponse> call, Throwable t) {
                 // Log error here since request failed
                 Log.e(TAG, t.toString());
+                MyProgressDialog.dismiss();
+                Toast.makeText(getActivity(), "No news found", Toast.LENGTH_SHORT).show();
+
             }
         });
     }

@@ -36,6 +36,7 @@ import vcci.android.consumer.model.events.event_list.EventItem;
 import vcci.android.consumer.model.events.event_list.EventListResponse;
 import vcci.android.consumer.model.events.event_list.Events;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -108,7 +109,7 @@ public class EventsFragment extends Fragment implements ItemSelectionListener {
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<EventListResponse> call = apiService.getEventsList("1.0", Configuration.DEVICE_TYPE, "get-events",
+        Call<EventListResponse> call = apiService.getEventsList(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-events",
                 token, "123456", id);
         call.enqueue(new Callback<EventListResponse>() {
             @SuppressLint("SetJavaScriptEnabled")

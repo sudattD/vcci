@@ -36,6 +36,7 @@ import vcci.android.consumer.model.circulars.circular_list.CircularListResponse;
 import vcci.android.consumer.model.circulars.circular_list.Circulars;
 import vcci.android.consumer.model.circulars.circular_list.DataItem;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -108,7 +109,7 @@ public class CircularFragment extends Fragment implements ItemSelectionListener 
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<CircularListResponse> call = apiService.getCircularList("1.0", Configuration.DEVICE_TYPE, "get-circulars",
+        Call<CircularListResponse> call = apiService.getCircularList(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-circulars",
                 token, "123456", id);
         call.enqueue(new Callback<CircularListResponse>() {
             @SuppressLint("SetJavaScriptEnabled")

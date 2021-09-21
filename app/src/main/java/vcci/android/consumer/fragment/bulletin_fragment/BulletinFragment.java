@@ -35,6 +35,7 @@ import vcci.android.consumer.config.Configuration;
 import vcci.android.consumer.interfaces.BulletinSelectedListener;
 import vcci.android.consumer.model.bulletin.BulletinResponse;
 import vcci.android.consumer.model.bulletin.BulletinsItem;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -106,7 +107,7 @@ public class BulletinFragment extends Fragment implements BulletinSelectedListen
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<BulletinResponse> call = apiService.getBulletinNews("1.0", Configuration.DEVICE_TYPE, "get-news-bulletin",
+        Call<BulletinResponse> call = apiService.getBulletinNews(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-news-bulletin",
                 token, "123456", "1", "100");
         call.enqueue(new Callback<BulletinResponse>() {
             @SuppressLint("SetJavaScriptEnabled")

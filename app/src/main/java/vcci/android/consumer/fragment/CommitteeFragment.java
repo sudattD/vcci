@@ -32,6 +32,7 @@ import vcci.android.consumer.model.committee.CommitteeDataItem;
 import vcci.android.consumer.model.committee.CommitteeDataResponse;
 import vcci.android.consumer.model.committee.Committees;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -124,7 +125,7 @@ public class CommitteeFragment extends Fragment {
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<CommitteeDataResponse> call = apiService.getCommitteeList("1.0", Configuration.DEVICE_TYPE, "get-committees-page",
+        Call<CommitteeDataResponse> call = apiService.getCommitteeList(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-committees-page",
                 token, "123456", id);
         call.enqueue(new Callback<CommitteeDataResponse>() {
             @SuppressLint("SetJavaScriptEnabled")

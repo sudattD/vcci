@@ -74,6 +74,7 @@ import vcci.android.consumer.interfaces.UpdateDialogClickListener;
 import vcci.android.consumer.model.category.CategoriesItem;
 import vcci.android.consumer.model.category.CategoriesResponse;
 import vcci.android.consumer.util.LocaleManager;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 public class MainActivity extends BaseActivity implements HideShowIconInterface, CategorySelectionListener,
@@ -387,7 +388,7 @@ public class MainActivity extends BaseActivity implements HideShowIconInterface,
 
             String token = Stash.getString("fcm_token");
             Log.d(TAG, "getSliderMenu: " + token);
-            Call<CategoriesResponse> call = apiService.getCategoriesList("1.0", Configuration.DEVICE_TYPE, "get-categories",
+            Call<CategoriesResponse> call = apiService.getCategoriesList(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-categories",
                     "token", "123456", "1", "100");
             call.enqueue(new Callback<CategoriesResponse>() {
                 @Override

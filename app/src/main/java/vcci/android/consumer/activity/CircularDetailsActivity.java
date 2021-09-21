@@ -30,6 +30,7 @@ import vcci.android.consumer.config.Configuration;
 import vcci.android.consumer.model.circulars.circular_detail.CircularDetailResponse;
 import vcci.android.consumer.model.circulars.circular_detail.CircularDetails;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -105,7 +106,7 @@ public class CircularDetailsActivity extends BaseActivity {
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<CircularDetailResponse> call = apiService.getCircularDetail("1.0", Configuration.DEVICE_TYPE, "get-circular-details",
+        Call<CircularDetailResponse> call = apiService.getCircularDetail(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-circular-details",
                 token, "123456", getID);
         call.enqueue(new Callback<CircularDetailResponse>() {
             @SuppressLint("SetJavaScriptEnabled")

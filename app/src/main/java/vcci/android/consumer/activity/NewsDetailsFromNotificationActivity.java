@@ -45,6 +45,7 @@ import vcci.android.consumer.model.newsDetail.NewsDetailResponse;
 import vcci.android.consumer.model.newsDetail.NewsDetails;
 import vcci.android.consumer.model.newsDetail.RelatedNewsItem;
 import vcci.android.consumer.model.newsDetail.RightAdsItem;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -185,7 +186,7 @@ public class NewsDetailsFromNotificationActivity extends BaseActivity implements
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<NewsDetailResponse> call = apiService.getNewsDetail("1.0", Configuration.DEVICE_TYPE, "get-news-details",
+        Call<NewsDetailResponse> call = apiService.getNewsDetail(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-news-details",
                 token, "123456", news_id);
         call.enqueue(new Callback<NewsDetailResponse>() {
             @SuppressLint("SetJavaScriptEnabled")

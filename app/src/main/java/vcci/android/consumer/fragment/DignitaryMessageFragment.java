@@ -33,6 +33,7 @@ import vcci.android.consumer.interfaces.ItemSelectionListener;
 import vcci.android.consumer.model.dignitary.dig_photo.DignitaryPhotoResponse;
 import vcci.android.consumer.model.dignitary.dig_video.DignitaryVideoResponse;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -106,7 +107,7 @@ public class DignitaryMessageFragment extends Fragment implements ItemSelectionL
             String token = Stash.getString("fcm_token");
             Log.d(TAG, "getSliderMenu: " + token);
 
-            Call<DignitaryPhotoResponse> call = apiService.getDignitaryPhotoData("1.0", Configuration.DEVICE_TYPE,
+            Call<DignitaryPhotoResponse> call = apiService.getDignitaryPhotoData(NetworkConstants.version, Configuration.DEVICE_TYPE,
                     "get-dignitary",
                     token, "123456", id);
             call.enqueue(new Callback<DignitaryPhotoResponse>() {
@@ -139,7 +140,7 @@ public class DignitaryMessageFragment extends Fragment implements ItemSelectionL
             String token = Stash.getString("fcm_token");
             Log.d(TAG, "getSliderMenu: " + token);
 
-            Call<DignitaryVideoResponse> call = apiService.getDignitaryVideoData("1.0", Configuration.DEVICE_TYPE, "get-dignitary",
+            Call<DignitaryVideoResponse> call = apiService.getDignitaryVideoData(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-dignitary",
                     token, "123456", "1");
             call.enqueue(new Callback<DignitaryVideoResponse>() {
                 @SuppressLint("SetJavaScriptEnabled")

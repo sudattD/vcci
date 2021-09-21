@@ -40,6 +40,7 @@ import vcci.android.consumer.model.dignitary_new.dignitary_video.DataItemDignita
 import vcci.android.consumer.model.dignitary_new.dignitary_video.DignitaryVideo;
 import vcci.android.consumer.model.dignitary_new.dignitary_video.DignitaryVideoResponseNew;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -128,7 +129,7 @@ public class DignitaryNewFragment extends Fragment implements ItemSelectionListe
             String token = Stash.getString("fcm_token");
             Log.d(TAG, "getSliderMenu: " + token);
 
-            Call<DignitaryPhotoResponseNew> call = apiService.getDignitaryPhotoList("1.0", Configuration.DEVICE_TYPE, "get-dignitary-ios",
+            Call<DignitaryPhotoResponseNew> call = apiService.getDignitaryPhotoList(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-dignitary-ios",
                     token, "123456", id);
             call.enqueue(new Callback<DignitaryPhotoResponseNew>() {
                 @SuppressLint("SetJavaScriptEnabled")
@@ -161,7 +162,7 @@ public class DignitaryNewFragment extends Fragment implements ItemSelectionListe
             String token = Stash.getString("fcm_token");
             Log.d(TAG, "getSliderMenu: " + token);
 
-            Call<DignitaryVideoResponseNew> call = apiService.getDignitaryVideoList("1.0", Configuration.DEVICE_TYPE, "get-dignitary-ios",
+            Call<DignitaryVideoResponseNew> call = apiService.getDignitaryVideoList(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-dignitary-ios",
                     token, "123456", id);
             call.enqueue(new Callback<DignitaryVideoResponseNew>() {
                 @SuppressLint("SetJavaScriptEnabled")

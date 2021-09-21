@@ -31,6 +31,7 @@ import vcci.android.consumer.config.Configuration;
 import vcci.android.consumer.model.contact.Contact;
 import vcci.android.consumer.model.contact.ContactInfoResponse;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -109,7 +110,7 @@ public class ContactFragment extends Fragment {
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<ContactInfoResponse> call = apiService.getContactInfo("1.0", Configuration.DEVICE_TYPE, "get-contact",
+        Call<ContactInfoResponse> call = apiService.getContactInfo(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-contact",
                 token, "123456");
         call.enqueue(new Callback<ContactInfoResponse>() {
             @SuppressLint("SetJavaScriptEnabled")

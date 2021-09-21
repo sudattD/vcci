@@ -39,6 +39,7 @@ import vcci.android.consumer.model.category.CategoriesItem;
 import vcci.android.consumer.model.category.CategoriesResponse;
 import vcci.android.consumer.model.news_by_category.NewsByCategoryIDResponse;
 import vcci.android.consumer.model.news_by_category.NewsItem;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -140,7 +141,7 @@ public class CategorywiseDetailActivity extends BaseActivity implements NewsSele
 
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
-        Call<CategoriesResponse> call = apiService.getCategoriesList("1.0", Configuration.DEVICE_TYPE, "get-categories",
+        Call<CategoriesResponse> call = apiService.getCategoriesList(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-categories",
                 "token", "123456", "1", "100");
         call.enqueue(new Callback<CategoriesResponse>() {
             @Override
@@ -188,7 +189,7 @@ public class CategorywiseDetailActivity extends BaseActivity implements NewsSele
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<NewsByCategoryIDResponse> call = apiService.getNewsByCategoryID("1.0", Configuration.DEVICE_TYPE, "get-news",
+        Call<NewsByCategoryIDResponse> call = apiService.getNewsByCategoryID(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-news",
                 token, "123456", "1", "100", catID);
         call.enqueue(new Callback<NewsByCategoryIDResponse>() {
             @Override

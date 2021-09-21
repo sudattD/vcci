@@ -36,6 +36,7 @@ import vcci.android.consumer.config.Configuration;
 import vcci.android.consumer.interfaces.NewsSelectionListener;
 import vcci.android.consumer.model.news_by_category.NewsByCategoryIDResponse;
 import vcci.android.consumer.model.news_by_category.NewsItem;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -131,7 +132,7 @@ public class CategorywiseDatalFragment extends Fragment implements NewsSelection
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<NewsByCategoryIDResponse> call = apiService.getNewsByCategoryID("1.0", Configuration.DEVICE_TYPE, "get-news",
+        Call<NewsByCategoryIDResponse> call = apiService.getNewsByCategoryID(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-news",
                 token, "123456", "1", "100", catID);
         call.enqueue(new Callback<NewsByCategoryIDResponse>() {
             @Override

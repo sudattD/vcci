@@ -30,6 +30,7 @@ import vcci.android.consumer.config.Configuration;
 import vcci.android.consumer.model.gallery.photos.gallery_detail.GalleryDetailResponse;
 import vcci.android.consumer.model.gallery.photos.gallery_detail.GalleryDetails;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -105,7 +106,7 @@ public class GalleryDetailsActivity extends BaseActivity {
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<GalleryDetailResponse> call = apiService.getGalleryDetail("1.0", Configuration.DEVICE_TYPE, "get-gallery-details",
+        Call<GalleryDetailResponse> call = apiService.getGalleryDetail(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-gallery-details",
                 token, "123456", getID);
         call.enqueue(new Callback<GalleryDetailResponse>() {
             @SuppressLint("SetJavaScriptEnabled")

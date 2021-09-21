@@ -40,6 +40,7 @@ import vcci.android.consumer.model.gallery.videos.video_list.VideoGallery;
 import vcci.android.consumer.model.gallery.videos.video_list.VideoItem;
 import vcci.android.consumer.model.gallery.videos.video_list.VideoResponse;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -121,7 +122,7 @@ public class GalleryFragment extends Fragment implements ItemSelectionListener {
             String token = Stash.getString("fcm_token");
             Log.d(TAG, "getSliderMenu: " + token);
 
-            Call<GalleryResponse> call = apiService.getGalleryList("1.0", Configuration.DEVICE_TYPE, "get-gallery",
+            Call<GalleryResponse> call = apiService.getGalleryList(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-gallery",
                     token, "123456", id);
             call.enqueue(new Callback<GalleryResponse>() {
                 @SuppressLint("SetJavaScriptEnabled")
@@ -153,7 +154,7 @@ public class GalleryFragment extends Fragment implements ItemSelectionListener {
             String token = Stash.getString("fcm_token");
             Log.d(TAG, "getSliderMenu: " + token);
 
-            Call<VideoResponse> call = apiService.getGalleryVideoList("1.0", Configuration.DEVICE_TYPE, "get-gallery",
+            Call<VideoResponse> call = apiService.getGalleryVideoList(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-gallery",
                     token, "123456", "2");
             call.enqueue(new Callback<VideoResponse>() {
                 @SuppressLint("SetJavaScriptEnabled")

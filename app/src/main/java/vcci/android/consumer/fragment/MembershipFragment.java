@@ -38,6 +38,7 @@ import vcci.android.consumer.model.membership_form.MembershipForm;
 import vcci.android.consumer.model.membership_form.MembershipFormsResponse;
 import vcci.android.consumer.model.membership_form.OtherDocs;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -96,7 +97,7 @@ public class MembershipFragment extends Fragment implements ItemSelectionListene
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<MembershipFormsResponse> call = apiService.getMembershipForms("1.0", Configuration.DEVICE_TYPE, "get-membership",
+        Call<MembershipFormsResponse> call = apiService.getMembershipForms(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-membership",
                 token, "123456");
         call.enqueue(new Callback<MembershipFormsResponse>() {
             @SuppressLint("SetJavaScriptEnabled")

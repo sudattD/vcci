@@ -30,6 +30,7 @@ import vcci.android.consumer.config.Configuration;
 import vcci.android.consumer.model.events.event_detail.EventDetailResponse;
 import vcci.android.consumer.model.events.event_detail.EventDetails;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -105,7 +106,7 @@ public class EventDetailsActivity extends BaseActivity {
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<EventDetailResponse> call = apiService.getEventsDetail("1.0", Configuration.DEVICE_TYPE, "get-event-details",
+        Call<EventDetailResponse> call = apiService.getEventsDetail(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-event-details",
                 token, "123456", getID);
         call.enqueue(new Callback<EventDetailResponse>() {
             @SuppressLint("SetJavaScriptEnabled")

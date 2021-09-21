@@ -45,6 +45,7 @@ import vcci.android.consumer.model.about_us.about_us_secretariat.Secretariat;
 import vcci.android.consumer.model.about_us.about_us_secretariat.SecretariatItem;
 import vcci.android.consumer.model.about_us.about_us_secretariat.SecretariatResponse;
 import vcci.android.consumer.util.MyProgressDialog;
+import vcci.android.consumer.util.NetworkConstants;
 import vcci.android.consumer.util.Stash;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -200,7 +201,7 @@ public class AboutUsFragment extends Fragment {
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<SecretariatResponse> call = apiService.getSecretariatData("1.0", Configuration.DEVICE_TYPE, "get-about-us",
+        Call<SecretariatResponse> call = apiService.getSecretariatData(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-about-us",
                 token, "123456", id);
         call.enqueue(new Callback<SecretariatResponse>() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -253,7 +254,7 @@ public class AboutUsFragment extends Fragment {
 
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
-        Call<PersonnelsDataResponse> call = apiService.getAbouUsPersonnelData("1.0", Configuration.DEVICE_TYPE, "get-about-us",
+        Call<PersonnelsDataResponse> call = apiService.getAbouUsPersonnelData(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-about-us",
                 token, "123456", id);
         call.enqueue(new Callback<PersonnelsDataResponse>() {
             @SuppressLint("SetJavaScriptEnabled")
@@ -292,7 +293,7 @@ public class AboutUsFragment extends Fragment {
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<AboutUsContentResponse> call = apiService.getAbouUsContent("1.0", Configuration.DEVICE_TYPE, "get-about-us",
+        Call<AboutUsContentResponse> call = apiService.getAbouUsContent(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-about-us",
                 token, "123456", id);
         call.enqueue(new Callback<AboutUsContentResponse>() {
             @SuppressLint("SetJavaScriptEnabled")
@@ -322,7 +323,7 @@ public class AboutUsFragment extends Fragment {
         String token = Stash.getString("fcm_token");
         Log.d(TAG, "getSliderMenu: " + token);
 
-        Call<AboutUsContentResponse> call = apiService.getAbouUsContent("1.0", Configuration.DEVICE_TYPE, "get-about-us",
+        Call<AboutUsContentResponse> call = apiService.getAbouUsContent(NetworkConstants.version, Configuration.DEVICE_TYPE, "get-about-us",
                 token, "123456", id);
         call.enqueue(new Callback<AboutUsContentResponse>() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
