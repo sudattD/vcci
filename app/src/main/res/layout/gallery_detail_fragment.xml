@@ -28,7 +28,7 @@
                 android:textStyle="bold"
                 tools:text="Title" />
 
-            <com.ibphub.vcci_new.util.RoundRectCornerImageView
+            <vcci.android.consumer.util.RoundRectCornerImageView
                 android:id="@+id/iv_event"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_148sdp"

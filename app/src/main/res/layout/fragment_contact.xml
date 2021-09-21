@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context="vcci.android.consumer.activity.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -105,7 +105,7 @@
                         android:layout_marginTop="@dimen/_4sdp"
                         android:background="@color/grey" />
 
-                    <com.ibphub.vcci_new.util.WrapContentListView
+                    <vcci.android.consumer.util.WrapContentListView
                         android:id="@+id/lv_call"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
                         android:layout_marginTop="@dimen/_4sdp"
                         android:background="@color/grey" />
 
-                    <com.ibphub.vcci_new.util.WrapContentListView
+                    <vcci.android.consumer.util.WrapContentListView
                         android:id="@+id/lv_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

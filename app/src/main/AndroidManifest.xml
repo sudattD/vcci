@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ibphub.vcci_new">
+    package="vcci.android.consumer">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <application
-        android:name="com.ibphub.vcci_new.VCCIApp"
+        android:name="vcci.android.consumer.VCCIApp"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/vcci_launcher"
@@ -20,7 +20,7 @@
         tools:targetApi="m">
 
         <activity
-            android:name="com.ibphub.vcci_new.activity.SplashActivity"
+            android:name="vcci.android.consumer.activity.SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -30,7 +30,7 @@
         </activity>
 
         <activity
-            android:name="com.ibphub.vcci_new.activity.MainActivity"
+            android:name="vcci.android.consumer.activity.MainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
@@ -44,73 +44,73 @@
             android:windowSoftInputMode="adjustResize" />-->
 
         <activity
-            android:name="com.ibphub.vcci_new.activity.EventDetailsActivity"
+            android:name="vcci.android.consumer.activity.EventDetailsActivity"
             android:label="Event Detail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.ibphub.vcci_new.activity.CircularDetailsActivity"
+            android:name="vcci.android.consumer.activity.CircularDetailsActivity"
             android:label="Event Detail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.ibphub.vcci_new.activity.BulletinActivity"
+            android:name="vcci.android.consumer.activity.BulletinActivity"
             android:label="Event Detail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.ibphub.vcci_new.activity.CategorywiseDetailActivity"
+            android:name="vcci.android.consumer.activity.CategorywiseDetailActivity"
             android:label="News Detail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.ibphub.vcci_new.activity.SocialSitesActivity"
+            android:name="vcci.android.consumer.activity.SocialSitesActivity"
             android:label="Social Site"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.ibphub.vcci_new.activity.AdsSitesActivity"
+            android:name="vcci.android.consumer.activity.AdsSitesActivity"
             android:label="Social Site"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.ibphub.vcci_new.activity.GalleryDetailsActivity"
+            android:name="vcci.android.consumer.activity.GalleryDetailsActivity"
             android:label="Gallery Detail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.ibphub.vcci_new.activity.VideoPlayActivity"
+            android:name="vcci.android.consumer.activity.VideoPlayActivity"
             android:label="Video"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.ibphub.vcci_new.activity.NewsDetailsFromNotificationActivity"
+            android:name="vcci.android.consumer.activity.NewsDetailsFromNotificationActivity"
             android:label="News Detail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.ibphub.vcci_new.image_slider.ViewPagerActivity"
+            android:name="vcci.android.consumer.image_slider.ViewPagerActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AlertDialogMy" />
 
         <activity
-            android:name="com.ibphub.vcci_new.image_slider.LogoutActivity"
+            android:name="vcci.android.consumer.image_slider.LogoutActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AlertDialogMy" />
 
         <activity
-            android:name="com.ibphub.vcci_new.service.NotificationWrapper"
+            android:name="vcci.android.consumer.service.NotificationWrapper"
             android:launchMode="singleTop"
-            android:parentActivityName="com.ibphub.vcci_new.activity.MainActivity"
+            android:parentActivityName="vcci.android.consumer.activity.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Transparent" />
 
@@ -131,7 +131,7 @@
 
         <!-- [START firebase_service] -->
         <service
-            android:name="com.ibphub.vcci_new.service.MyFirebaseMessagingService"
+            android:name="vcci.android.consumer.service.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

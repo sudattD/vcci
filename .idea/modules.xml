@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Vcci.iml" filepath="$PROJECT_DIR$/.idea/modules/Vcci.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Vcci.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Vcci.app.iml" />
-    </modules>
-  </component>
-</project>

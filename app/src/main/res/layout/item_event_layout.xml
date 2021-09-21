@@ -16,7 +16,7 @@
         android:padding="@dimen/_4sdp"
         tools:ignore="RedundantNamespace">
 
-        <com.ibphub.vcci_new.util.RoundRectCornerImageView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        <vcci.android.consumer.util.RoundRectCornerImageView xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/iv_event"
             android:layout_width="@dimen/_96sdp"
             android:layout_height="@dimen/_72sdp"
