@@ -28,7 +28,7 @@ public class DashboardResponse{
 	private int error;
 
 	@SerializedName("categories_news")
-	private CategoriesNews categoriesNews;
+	private List<CategoriesNews> categoriesNews;
 
 	@SerializedName("banners")
 	private List<BannersItem> banners;
@@ -92,11 +92,11 @@ public class DashboardResponse{
 		return error;
 	}
 
-	public void setCategoriesNews(CategoriesNews categoriesNews){
+	public void setCategoriesNews(List<CategoriesNews> categoriesNews){
 		this.categoriesNews = categoriesNews;
 	}
 
-	public CategoriesNews getCategoriesNews(){
+	public List<CategoriesNews> getCategoriesNews(){
 		return categoriesNews;
 	}
 
